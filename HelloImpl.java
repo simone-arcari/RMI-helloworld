@@ -24,7 +24,7 @@ public class HelloImpl extends UnicastRemoteObject implements Hello {
 
             // Registrazione dell'oggetto remoto nel registro RMI
             java.rmi.registry.LocateRegistry.createRegistry(1099);
-            java.rmi.Naming.rebind("rmi://192.168.1.5/Hello", hello);
+            java.rmi.Naming.rebind("rmi://192.168.1.2/Hello", hello);
             System.out.println("Server pronto e in ascolto...");
         } catch (Exception e) {
             e.printStackTrace();
